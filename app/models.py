@@ -33,6 +33,7 @@ class Folder(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     name = db.Column(db.String(20))
+    description = db.Column(db.String(20))
     privacy_id = db.Column(db.Integer, db.ForeignKey('privacy.id'))
     privacy = db.relationship('Privacy', backref='folders', lazy='dynamic')
     created = db.Column(db.DateTime)

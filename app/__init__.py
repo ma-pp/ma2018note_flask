@@ -24,4 +24,4 @@ from .models import *
 
 from .note.resources import api as noteApi
 
-api.add_namespace(noteApi, path='/notes')
+api.add_namespace(noteApi, path='/api')
