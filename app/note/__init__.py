@@ -1,3 +1,3 @@
 from flask_restplus import Namespace
 
-api = Namespace('note', description='Notes management')
+api = Namespace('Note', description='Notes Management')
